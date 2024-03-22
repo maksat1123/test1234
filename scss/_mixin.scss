@@ -1,0 +1,7 @@
+@mixin font ($s,$w) {
+    font-family: Roboto;
+    font-size: $s;
+    font-style: normal;
+    font-weight: $w;
+    line-height: normal;
+}

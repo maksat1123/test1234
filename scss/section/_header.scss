@@ -1,0 +1,64 @@
+.header {
+    background: url(../../imgs/header-bg.png);
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 23px 120px 25px 128px;
+    }
+
+    &__nav {
+
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__link {
+        color: #FFF;
+        @include font (15px, 500);
+    }
+
+    &__contact {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    &__link-gps {
+        margin-right: 380px;
+        color: #FFF;
+        @include font (15px, 500);
+
+    }
+
+    &__link {
+        @include font (14px, 500);
+    }
+
+}
+
+
+
+
+@media (max-width:768px) {
+    .header {
+        
+        
+        &__link-gps {
+            @include font (12px, 500);
+        
+        }
+        &__link {
+            @include font (14px,500);
+        }
+        &__nav {
+            display: none;
+        }
+        
+
+
+    }
+}

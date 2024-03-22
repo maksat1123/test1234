@@ -1,0 +1,78 @@
+.evarugs {
+    padding: 40px 87px 250px 122px;
+    background: url(../../imgs/evarugs-bg.jpg);
+    background-repeat: no-repeat;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+
+        @include font (36px, 900);
+        font-style: italic;
+        color: #000;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 25px;
+       text-align: center;
+        @include font (18px,300);
+        color: #737373
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &__bot {
+        margin-top: 189px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__subtitle {
+        @include font (50px,900);
+        color: #000;
+    }
+    &__description {
+        @include font (24px,300);
+        color: #000;
+    }
+   
+       
+    
+    &__btn { color: #fff;
+        @include font (20px,900);
+        padding: 15px 38px 16px 38px;
+        border-radius: 7px;
+        background: linear-gradient(136deg, #b90160 0%, #2e3192 100%);margin-top: 22px;
+    }
+}
+@media (max-width:768px){
+    .evarugs {
+        padding-bottom: 206px;
+        &__bot {
+            margin-top: 61px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__subtitle {
+            @include font (40px,900);
+        }
+        &__description {
+            margin-top: 30px;
+            @include font (24px,300);
+        }
+        &__btn {
+            @include font (15px,900);
+            padding: 12px 32px 13px 32px;
+        }
+    }
+}

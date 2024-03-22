@@ -1,0 +1,68 @@
+.footer {
+    padding: 172px 243px 84px 243px;
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include font (14px, 700);
+
+    }
+
+    &__card {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        @include font (14px, 300);
+        color: #000;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card img {
+        width: 10%;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 7%;
+        left: -15%;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 114px 48px 48px 45px;
+
+        &__title {
+            @include font (14px, 700);
+        }
+
+        &__card img {
+            width: 20%;
+
+        }
+
+        &__bg {
+            width: 90%;
+            left: 10%;
+            bottom: 35%;
+            transform: rotate(180deg);
+        }
+        &__nav {
+            row-gap: 9px;
+        }
+    }
+}
